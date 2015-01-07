@@ -2,13 +2,13 @@ class SimpleString
 
     attr_reader :data
 
-    def initialize(the_data)
-      @data = the_data
+    def initialize(data)
+      @data = data
     end
 
     def length
       counter = 0
-      data = data.to_a
+      data = @data.chars
       data.each do |letter|
         counter += 1
       end
